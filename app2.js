@@ -1,9 +1,11 @@
+loadScript('/js/jquery-1.7.min.js');
+
 console.log('Is this working?');
 
 let viz;
 
 //add Share Link to Tableau Public in here
-const url = "https://public.tableau.com/views/Squirrels_15746293266160/Dashboard1?:display_count=y&:origin=viz_share_link";
+const url = "https://public.tableau.com/profile/saurabh.singh1606#!/?newProfile=&activeTab=0";
 
 const vizContainer = document.getElementById('vizContainer');
 const options = {
@@ -47,12 +49,3 @@ function generateImage() {
 exportImage.addEventListener("click", function () {
     generateImage();
   });
-  
-  function loadScript(url)
-{    
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    head.appendChild(script);
-}
