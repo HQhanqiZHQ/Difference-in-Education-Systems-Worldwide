@@ -1,5 +1,3 @@
-loadScript('/js/jquery-1.7.min.js');
-
 console.log('Is this working?');
 
 let viz;
