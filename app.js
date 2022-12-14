@@ -10,9 +10,6 @@ const vizContainer = document.getElementById('vizContainer');
 function initViz() {
     console.log('Executing the initViz function!');
     viz = new tableau.Viz(vizContainer, url, options);
-    viz1 = new tableau.Viz(vizContainerSub1, url1, options1);
-    viz2 = new tableau.Viz(vizContainerSub2, url2, options2);
-    viz3 = new tableau.Viz(vizContainerSub3, url3, options3);
 }
 
 
