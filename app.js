@@ -81,14 +81,25 @@ document.addEventListener("DOMContentLoaded", initViz);
 const exportPDF = document.getElementById('exportPDF');
 const exportImage = document.getElementById('exportImage');
 
+const exportPDF1 = document.getElementById('exportPDF1');
+const exportImage1 = document.getElementById('exportImage1');
+
 
 //click on the pdf button to generate pdf of dashboard
 function generatePDF() {
     viz.showExportPDFDialog()
 }
 
+function generatePDF1() {
+    viz1.showExportPDFDialog()
+}
+
 exportPDF.addEventListener("click", function () {
     generatePDF();
+  });
+
+exportPDF.addEventListener("click", function () {
+    generatePDF1();
   });
 
 //click on image to generate image of dashboard
@@ -96,6 +107,15 @@ function generateImage() {
     viz.showExportImageDialog()
 }
 
+//click on image to generate image of dashboard
+function generateImage1() {
+    viz1.showExportImageDialog()
+}
+
 exportImage.addEventListener("click", function () {
     generateImage();
+  });
+
+exportImage.addEventListener("click", function () {
+    generateImage1();
   });
