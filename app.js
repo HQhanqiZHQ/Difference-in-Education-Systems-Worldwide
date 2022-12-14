@@ -21,7 +21,8 @@ const url3 = "https://public.tableau.com/views/SuperbowlOutcomes/Final?%3Adispla
 const vizContainerSub3 = document.getElementById('vizContainerSub3');
 
 const options = {
-    hideTabs: true,
+    hideToolbar: true,
+    hideTabs: false,
     height: 1000,
     width: 1200,
     onFirstInteraction: function() {
