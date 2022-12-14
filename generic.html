@@ -61,13 +61,12 @@
 										education, regardless of gender to provide equal opportunity for talented individuals</p>
 								</header>
 								<h2>Subtopic 1: Gender</h2>
-
-								<button id = "exportPDF">Generate PDF</button>
-								<button id = "exportImage">Generate Image</button>
-		
-								<div id="vizContainerSub1"></div>
-		
-								<script src="./app.js"></script>
+								<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+								
+								<tableau-viz id="tableauViz"       
+								  src='https://public.tableau.com/views/liveintegration1/Dashboard1'      
+								  device="phone" toolbar="bottom" hide-tabs>
+								</tableau-viz>
 
 								<p>Instructions on playing the visualization here</p>
 								<p>Insights/Take out messages here </p>
