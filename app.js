@@ -103,3 +103,28 @@ function generateImage() {
 exportImage.addEventListener("click", function () {
     generateImage();
   });
+
+/**
+ * Finds the correct size of the dashboard in this screen.
+ */
+function findDashboardSize() {
+	var minHeight = 630;
+	var maxHeight = 885;
+	var minWidth  = 1000;
+	
+	// The minus 100px leaves us room for the header/footer. Adjust as needed.
+	var height = $('body').height() - 100;
+	
+	if (height < minHeight) {
+		height = minHeight;
+	}
+	if (height > maxHeight) {
+		height = maxHeight;
+	}
+	
+	var width = Math.round(height/(minHeight/minWidth));
+	return {
+		'width'  : width,
+		'height' : height
+	}
+}
