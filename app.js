@@ -2,7 +2,7 @@ console.log('Is this working?');
 
 let viz;
 //add Share Link to Tableau Public in here
-const url = "https://public.tableau.com/app/profile/jessica.xu8208/viz/shared/RBBFNJYX7";
+const url = "https://public.tableau.com/views/Superstore_24/Overview";
 const vizContainer = document.getElementById('vizContainer');
 
 //sub1
