@@ -2,7 +2,7 @@ console.log('Is this working?');
 
 let viz;
 //add Share Link to Tableau Public in here
-const url = "https://public.tableau.com/views/Superstore_24/Overview";
+const url = "https://public.tableau.com/views/STA313frontpage/Dashboard1?:language=zh-CN&onFirstInteraction=function()%20%7B%0A%20%20%20%20%20%20%20%20workbook%20%3D%20viz.getWorkbook();%0A%20%20%20%20%20%20%20%20activeSheet%20%3D%20workbook.getActiveSheet();%0A%20%20%20%20%20%20%20%20console.log(%22My%20dashboard%20is%20interactive%22);%0A%20%20%20%20%7D&:toolbar=n&:display_count=n&:origin=viz_share_link";
 const vizContainer = document.getElementById('vizContainer');
 
 //sub1
